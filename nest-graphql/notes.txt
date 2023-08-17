@@ -5,3 +5,6 @@ docker container run `
 -v ${PWD}:/app `
 node:18-alpine3.17 `
 sh -c "yarn install && yarn start:dev"
+
+# Interactive terminal  flag = -it
+docker exec -it CONTAINER EXECUTE(bash, /bin/sh)
