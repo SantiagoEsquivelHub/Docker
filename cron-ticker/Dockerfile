@@ -4,6 +4,8 @@ WORKDIR /app
 
 COPY app.js package.json ./
 
+COPY package.json ./
+
 RUN npm install
 
 ENTRYPOINT [ "npm", "start" ]
